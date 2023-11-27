@@ -1,0 +1,12 @@
+{
+  "name": "Monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@8.10.5",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

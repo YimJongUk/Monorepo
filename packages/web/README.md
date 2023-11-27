@@ -1,6 +1,3 @@
-# Monorepo
-모노레포를 활용한 React 프로젝트
-
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

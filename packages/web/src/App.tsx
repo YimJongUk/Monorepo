@@ -1,11 +1,9 @@
-import { Button } from '@monorepo/common';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <>
-      Web
-      <Button />
-      <div></div>
+      <MainPage />
     </>
   );
 }

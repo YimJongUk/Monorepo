@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import { Footer, Header } from '@monorepo/common';
+import { Button, Footer, Header } from '@monorepo/common';
+import { Outlet } from 'react-router-dom';
 
 const Base = styled.div`
   max-width: 1200px;
@@ -11,6 +12,8 @@ const MainPage: React.FC = () => {
     <>
       <Header height={30} />
       <Base>Header 와 Footer 추가</Base>
+      <Button />
+      <Outlet />
       <Footer height={30} />
     </>
   );

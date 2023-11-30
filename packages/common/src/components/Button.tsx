@@ -30,7 +30,6 @@ export const Button = (): ReactElement => {
   }, []);
 
   return (
-    // <Provider store={store}>
     <>
       <div>
         <div>{data.userId}</div>
@@ -41,6 +40,5 @@ export const Button = (): ReactElement => {
         <button onClick={() => dispatch(inc())}>Click</button>
       </div>
     </>
-    // </Provider>
   );
 };

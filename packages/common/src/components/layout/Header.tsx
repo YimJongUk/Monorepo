@@ -11,7 +11,6 @@ const Base = styled.div<{ height?: number }>`
   left: 0;
   position: fixed;
   width: 100%;
-  z-index: 10;
   height: ${({ height }) => (height ? `${height}px` : `0px`)};
   background-color: #3f3f3f;
 `;

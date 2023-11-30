@@ -1,5 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
+import DashBoard from '../pages/DashBoard';
+import Map from '../pages/Map';
+import UseLicense from '../pages/UseLicense';
 
 // react-router 예전 버전 사용방법
 // const Routers = () => {
@@ -24,12 +27,9 @@ const Routers = createBrowserRouter([
     element: <MainPage />,
     errorElement: <div>Error!!</div>,
     children: [
-      {
-        path: 'home',
-        element: <div>홈</div>
-      },
-      { path: 'user/', element: <div>유저</div> },
-      { path: 'user/:userId', element: <div>상세</div> }
+      { path: 'board', element: <DashBoard /> },
+      { path: 'map', element: <Map /> },
+      { path: 'license', element: <UseLicense /> }
     ]
   }
 ]);

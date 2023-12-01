@@ -10,16 +10,16 @@ const Container = styled.div`
 `;
 
 const Body = styled.div`
-  top: 60px;
-  left: 200px;
-  color: black;
-  position: fixed;
+  margin-left: 200px;
+  position: relative;
+  background-color: #fafbfe;
+  margin-bottom: 30px;
 `;
 
 const MainPage: React.FC = () => {
   return (
     <Container>
-      <Header height={60} />
+      <Header height={60}>Header</Header>
       <Navigation width={200}>
         <Menu />
       </Navigation>

@@ -8,11 +8,11 @@ interface Props {
 
 const Base = styled.div<{ height?: number }>`
   top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
+  margin-left: 200px;
+  position: sticky;
+  z-index: 1000;
+  background-color: #ffffff;
   height: ${({ height }) => (height ? `${height}px` : `0px`)};
-  background-color: #3f3f3f;
 `;
 
 export const Header: React.FC<Props> = ({ height, children }) => {

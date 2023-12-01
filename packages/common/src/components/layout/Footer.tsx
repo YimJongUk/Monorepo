@@ -6,12 +6,12 @@ interface Props {
 }
 
 const Base = styled.div<{ height?: number }>`
-  top: 1000;
-  left: 0;
+  bottom: 0;
+  margin-left: 200px;
   position: fixed;
-  width: 100%;
-  z-index: 10;
-  background-color: #3f3f3f;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #313a46;
   height: ${({ height }) => (height ? `${height}px` : '0px')};
 `;
 

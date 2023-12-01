@@ -10,9 +10,9 @@
 참고사항(작성법)
 
 - '[]' 내에 문구 작성, '()' 으로 URL 경로 넣으면 Link 생성
-  ex) [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+  > [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - ``(명칭 : 백틱) 내에 사용하면 영역강조
-ex) Configure the top-level `parserOptions` property like this:
+  > Configure the top-level `parserOptions` property like this:
 - 코드 영역으로 작성하는것은 백틱3개 + js 로 시작하여 백틱3개 로 끝나면됨
 
 ````js
@@ -26,3 +26,8 @@ export default {
   }
 };
 ````
+
+---
+
+- Dashboard 업비트 api 활용한 대시보드
+- kakao map?

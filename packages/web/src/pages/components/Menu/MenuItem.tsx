@@ -1,18 +1,28 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BsApple } from 'react-icons/bs';
 
 interface Props {
-  href: string;
   name: string;
 }
-const Container = styled.li``;
 
-const MenuItem: React.FC<Props> = ({ href, name }) => {
+const List = styled.li`
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+`;
+
+const MenuName = styled.div`
+  padding-left: 10px;
+`;
+
+const MenuItem: React.FC<Props> = ({ name }) => {
   return (
-    <Container>
-      <Link to={href}>{name}</Link>
-    </Container>
+    <List>
+      <BsApple />
+      <MenuName>{name}</MenuName>
+    </List>
   );
 };
 

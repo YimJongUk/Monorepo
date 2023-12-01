@@ -11,16 +11,11 @@ const Base = styled.div<{ width?: number }>`
   left: 0;
   height: 100dvh;
   width: ${({ width }) => (width ? `${width}px` : `200px`)};
-  position: relative;
-  background-color: #3f3f3f;
+  position: fixed;
+  background-color: #313a46;
   margin: 0 0;
-  color: white;
-  a {
-    text-decoration: none;
-    :visited {
-      color: white;
-    }
-  }
+  color: #8391a2;
+  z-index: 1000;
 `;
 
 export const Navigation: React.FC<Props> = ({ width, children }) => {

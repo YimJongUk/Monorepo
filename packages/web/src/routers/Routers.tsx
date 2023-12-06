@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
-import DashBoard from '../pages/DashBoard';
-import Map from '../pages/Map';
-import UseLicense from '../pages/UseLicense';
+import DashBoard from '../pages/DashBoard/DashBoard';
+import Map from '../pages/Map/Map';
+import UseLicense from '../pages/UseLicense/UseLicense';
 
 // react-router 예전 버전 사용방법
 // const Routers = () => {

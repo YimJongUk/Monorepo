@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { /*Button,*/ Footer, Header, Navigation } from '@monorepo/common';
 import { Outlet } from 'react-router-dom';
-import Menu from './components/Menu';
+import Menu from '../components/Menu';
 
 const Container = styled.div`
   margin: 0;

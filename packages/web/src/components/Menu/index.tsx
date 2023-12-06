@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuItem from './MenuItem';
 import styled from '@emotion/styled';
-import { getMenu } from '../../../apis';
+import { getMenu } from '../../apis';
 import { useQuery } from '@tanstack/react-query';
 import { NavLink } from 'react-router-dom';
 
@@ -66,6 +66,7 @@ const Menu: React.FC = () => {
               <NavLink
                 to={obj.URL}
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
+                key={idx}
               >
                 <MenuItem key={idx} name={obj.NAME} />
               </NavLink>

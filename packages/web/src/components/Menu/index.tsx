@@ -28,7 +28,7 @@ const MenuContainer = styled.div`
   }
   ::-webkit-scrollbar-thumb {
     height: 10%;
-    background: #ffff00;
+    background: #bccee4;
     border-radius: 10px;
   }
 `;

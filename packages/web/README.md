@@ -29,5 +29,13 @@ export default {
 
 ---
 
-- Dashboard 업비트 api 활용한 대시보드
-- kakao map?
+- 공용
+- react-router, vite, react-icons
+
+- Dashboard
+- 영화 및 TV,
+- example) 넷플, 디즈니, 웨이브, 티빙, cgv, 메가박스 등등
+- react-bootstrap, react-Query, redux,
+
+- kakao map 활용
+- 예상) mui, react-Query, zustand

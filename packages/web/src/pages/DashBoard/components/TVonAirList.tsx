@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import CardLayout from '../../../components/Card/CardLayout';
 import { onTheAirApi } from '../../../apis';
 import { TVDetail } from '../types';
 import { AxiosError } from 'axios';
+import { Stack } from 'react-bootstrap';
 
 const TVonAirList = () => {
   // const { data } = useQuery<object>({
@@ -42,9 +42,13 @@ const TVonAirList = () => {
   if (isLoading) return <div>로딩중</div>;
 
   return (
-    <CardLayout Header='TV온에어' Title=''>
-      {data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}
-    </CardLayout>
+    <Stack gap={5}>
+      <div className='p-5 border border-black rounded-5'>
+        {data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}
+      </div>
+      <div className='p-1'>{data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}</div>
+      <div className='p-1'></div>
+    </Stack>
   );
 };
 

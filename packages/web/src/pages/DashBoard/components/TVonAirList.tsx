@@ -47,6 +47,7 @@ const TVonAirList = () => {
         {data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}
       </div>
       <div className='p-1'>{data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}</div>
+      <div className='p-1'></div>
     </Stack>
   );
 };

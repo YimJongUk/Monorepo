@@ -36,7 +36,11 @@ const axiosInstance = axios.create({
   }
 });
 
-export const onTheAirApi = () => axiosInstance.get('/tv/on_the_air');
+export const TvOnTheAirApi = () => axiosInstance.get('/tv/on_the_air');
+
+export const TvPopularApi = () => axiosInstance.get('/tv/popular');
+
+export const TvTopRatedApi = () => axiosInstance.get('/tv/top_rated');
 
 //export const latestApi = () => axiosInstance.get('/movie/latest');
 
@@ -57,10 +61,6 @@ export const onTheAirApi = () => axiosInstance.get('/tv/on_the_air');
 // export const latestApi = () => axiosInstance.get('/tv/latest');
 
 // export const airingTodayApi = () => axiosInstance.get('/tv/airing_today');
-
-// export const popularApi = () => axiosInstance.get('/tv/popular');
-
-// export const topRatedApi = () => axiosInstance.get('/tv/top_rated');
 
 // export const detailApi = (id: string) => axiosInstance.get(`/tv/${id}`);
 

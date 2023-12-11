@@ -12,7 +12,7 @@ const Container = styled.div`
 const Body = styled.div`
   margin-left: 200px;
   position: relative;
-  background-color: #fafbfe;
+  background-color: #3f3f3f;
   margin-bottom: 30px;
 `;
 

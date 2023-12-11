@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import { onTheAirApi } from '../../../apis';
+import { TvOnTheAirApi } from '../../../apis';
 import { TVDetail } from '../types';
 import { AxiosError } from 'axios';
-import { Stack } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 const TVonAirList = () => {
   // const { data } = useQuery<object>({
@@ -20,9 +20,9 @@ const TVonAirList = () => {
   //     const info = await onTheAirApi({ page: pageParam });
   //     return info.data;
   //   },
-  //   initialPageParam: 1,
-  //   getPreviousPageParam: (firstPage, allPages, firstPageParam, allPageParams) => {
-  //     return allPageParams[allPageParams.length - 1];
+  //   initialPageParam: 1,stPage, allPages, firstPageParam, allPageParams) => {
+  //     return allPageParams[all
+  //   getPreviousPageParam: (firPageParams.length - 1];
   //   },
   //   getNextPageParam: (lastPage, allPages, lastPageParam) => Number(lastPageParam) + 1
   // });
@@ -33,7 +33,7 @@ const TVonAirList = () => {
     queryKey: ['TV'],
     queryFn: async () => {
       console.log('호출');
-      const info = await onTheAirApi();
+      const info = await TvOnTheAirApi();
       return info.data.results;
     },
     enabled: true
@@ -41,12 +41,20 @@ const TVonAirList = () => {
 
   if (isLoading) return <div>로딩중</div>;
 
+  // 슬라이더 형으로 만들자.
   return (
-    <Stack gap={5}>
-      <div className='p-5 border border-black rounded-5'>
-        {data && data.map((obj: TVDetail, idx: number) => <div key={idx}>{obj.name}</div>)}
-      </div>
-    </Stack>
+    <Carousel>
+      {data &&
+        data.map((obj: TVDetail, idx: number) => (
+          <Carousel.Item key={idx}>
+            <img
+              src={`${import.meta.env.VITE_APP_IMAGE_ANOTHER_PREFIX}/${obj.backdrop_path}`}
+              style={{ width: '50px', height: '50px' }}
+            />
+            <Carousel.Caption>{obj.name}</Carousel.Caption>
+          </Carousel.Item>
+        ))}
+    </Carousel>
   );
 };
 

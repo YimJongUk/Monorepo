@@ -37,5 +37,6 @@ export default {
 - example) 넷플, 디즈니, 웨이브, 티빙, cgv, 메가박스 등등
 - react-bootstrap, react-Query, redux,
 
+
 - kakao map 활용
 - 예상) mui, react-Query, zustand

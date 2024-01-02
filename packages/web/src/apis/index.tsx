@@ -42,6 +42,10 @@ export const TvPopularApi = () => axiosInstance.get('/tv/popular');
 
 export const TvTopRatedApi = () => axiosInstance.get('/tv/top_rated');
 
+export const TvAiringTodayApi = () => axiosInstance.get('/tv/airing_today');
+
+export const detailApi = (id: string) => axiosInstance.get(`/tv/${id}`);
+
 //export const latestApi = () => axiosInstance.get('/movie/latest');
 
 // export const upcomingApi = () => axiosInstance.get('/movie/upcoming');
@@ -59,10 +63,6 @@ export const TvTopRatedApi = () => axiosInstance.get('/tv/top_rated');
 // export const searchApi = (query: string) => axiosInstance.get(`/search/movie?query=${query}`);
 
 // export const latestApi = () => axiosInstance.get('/tv/latest');
-
-// export const airingTodayApi = () => axiosInstance.get('/tv/airing_today');
-
-// export const detailApi = (id: string) => axiosInstance.get(`/tv/${id}`);
 
 // export const similarApi = (id: string) => axiosInstance.get(`/tv/${id}/similar`);
 

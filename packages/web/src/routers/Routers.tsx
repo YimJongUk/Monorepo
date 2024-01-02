@@ -1,8 +1,9 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { Navigate, createBrowserRouter } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
-import DashBoard from '../pages/DashBoard/DashBoard';
+import Ott from '../pages/OTT/Ott';
 import Map from '../pages/Map/Map';
 import UseLicense from '../pages/UseLicense/UseLicense';
+import TVProgramDetail from '../pages/OTT/components/details/TvProgramDetail';
 
 // react-router 예전 버전 사용방법
 // const Routers = () => {
@@ -13,23 +14,37 @@ import UseLicense from '../pages/UseLicense/UseLicense';
 //   );
 // };
 
+// path 선언후 loader와 action 옵션은 될수있으면 사용 안하는게 좋음
+// loader: async () => {
+//   return new Promise((res) => {
+//     setTimeout(() => {
+//       return res('finish!');
+//     }, 3000);
+//   });
+// },
+
 const Routers = createBrowserRouter([
   {
     path: '/',
-    // loader와 action 옵션은 될수있으면 사용 안하는게 좋음
-    // loader: async () => {
-    //   return new Promise((res) => {
-    //     setTimeout(() => {
-    //       return res('finish!');
-    //     }, 3000);
-    //   });
-    // },
     element: <MainPage />,
     errorElement: <div>Error!!</div>,
     children: [
-      { path: 'board', element: <DashBoard /> },
+      {
+        path: '',
+        element: <Navigate to='ott' />,
+        index: true
+      },
+      {
+        path: 'ott',
+        element: <Ott />
+      },
+      { path: 'ott/:id', element: <TVProgramDetail /> },
       { path: 'map', element: <Map /> },
-      { path: 'license', element: <UseLicense /> }
+      { path: 'license', element: <UseLicense /> },
+      { path: 'menu1', element: <div>menu1</div> },
+      { path: 'menu2', element: <div>menu2</div> },
+      { path: 'menu3', element: <div>menu3</div> },
+      { path: 'menu4', element: <div>menu4</div> }
     ]
   }
 ]);

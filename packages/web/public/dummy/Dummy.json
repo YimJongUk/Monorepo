@@ -1,7 +1,7 @@
 [
   {
-    "NAME": "DashBoard",
-    "URL": "board"
+    "NAME": "OTT",
+    "URL": "ott"
   },
   {
     "NAME": "MAP",
@@ -12,111 +12,19 @@
     "URL": "license"
   },
   {
-    "NAME": "Menu",
-    "URL": ""
+    "NAME": "Menu1",
+    "URL": "menu1"
   },
   {
-    "NAME": "Menu",
-    "URL": ""
+    "NAME": "Menu2",
+    "URL": "menu2"
   },
   {
-    "NAME": "Menu",
-    "URL": ""
+    "NAME": "Menu3",
+    "URL": "menu3"
   },
   {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
-  },
-  {
-    "NAME": "Menu",
-    "URL": ""
+    "NAME": "Menu4",
+    "URL": "menu4"
   }
 ]

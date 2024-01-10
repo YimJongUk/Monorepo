@@ -32,11 +32,16 @@ export default {
 - 공용
 - react-router, vite, react-icons
 
-- Dashboard
+- OTT
 - 영화 및 TV,
 - example) 넷플, 디즈니, 웨이브, 티빙, cgv, 메가박스 등등
 - react-bootstrap, react-Query, redux,
 
-
 - kakao map 활용
-- 예상) mui, react-Query, zustand
+- mui, react-Query, zustand
+
+- 로그인, 로그아웃
+- 로컬스토리지 활용, 로그인 상태에서의 정보활용
+- react-bootstrap, redux, localstorage
+
+- 차트?

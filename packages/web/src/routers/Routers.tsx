@@ -1,9 +1,9 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
 import Ott from '../pages/OTT/Ott';
-import Map from '../pages/Map/Map';
+import KakaoMap from '../pages/Map/KakaoMap';
 import UseLicense from '../pages/UseLicense/UseLicense';
-import TVProgramDetail from '../pages/OTT/components/details/TvProgramDetail';
+import TVProgramDetail from '../pages/OTT/components/details/TVProgramDetail';
 
 // react-router 예전 버전 사용방법
 // const Routers = () => {
@@ -31,7 +31,7 @@ const Routers = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Navigate to='ott' />,
+        element: <Navigate to='map' />,
         index: true
       },
       {
@@ -39,7 +39,7 @@ const Routers = createBrowserRouter([
         element: <Ott />
       },
       { path: 'ott/:id', element: <TVProgramDetail /> },
-      { path: 'map', element: <Map /> },
+      { path: 'map', element: <KakaoMap /> },
       { path: 'license', element: <UseLicense /> },
       { path: 'menu1', element: <div>menu1</div> },
       { path: 'menu2', element: <div>menu2</div> },

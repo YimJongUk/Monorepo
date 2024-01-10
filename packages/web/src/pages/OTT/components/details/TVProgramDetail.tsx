@@ -7,6 +7,7 @@ import { TVDetail } from '../../types';
 const TVProgramDetail: React.FC = () => {
   // TV 디테일 프로그램
   const { id } = useParams();
+
   const { data, isLoading } = useQuery<TVDetail, AxiosError>({
     queryKey: ['TVProgramDetail'],
     queryFn: async () => {

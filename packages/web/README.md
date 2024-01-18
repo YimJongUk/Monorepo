@@ -45,3 +45,4 @@ export default {
 - react-bootstrap, redux, localstorage
 
 - 차트?
+- React Native ?

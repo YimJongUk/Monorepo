@@ -31,7 +31,7 @@ const Routers = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Navigate to='map' />,
+        element: <Navigate to='ott' />,
         index: true
       },
       {

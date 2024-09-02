@@ -1,0 +1,30 @@
+[
+  {
+    "NAME": "OTT",
+    "URL": "ott"
+  },
+  {
+    "NAME": "MAP",
+    "URL": "map"
+  },
+  {
+    "NAME": "License",
+    "URL": "license"
+  },
+  {
+    "NAME": "Menu1",
+    "URL": "menu1"
+  },
+  {
+    "NAME": "Menu2",
+    "URL": "menu2"
+  },
+  {
+    "NAME": "Menu3",
+    "URL": "menu3"
+  },
+  {
+    "NAME": "Menu4",
+    "URL": "menu4"
+  }
+]

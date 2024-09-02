@@ -13,10 +13,6 @@ const Map: React.FC = () => {
     setNav({ x: 33.452613, y: 126.570888 });
   };
 
-  // useEffect(() => {
-  //   setStart(true);
-  // }, []);
-
   return (
     <>
       <div style={{ width: '500px', height: '300px' }}>
